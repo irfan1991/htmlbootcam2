@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Color</title>
+
+    <style>
+        div#opacity{
+            background-color: magenta;
+            opacity: 0.5;
+        }
+        p#warna{
+            color: rgba(78, 231, 23, 0.5);
+        }
+        div#warna{
+            background-color: hsla(104, 82%, 60%, 0.5);
+        }
+    </style>
+</head>
+<body>
+    <h1 style="color: #4ee717;">Numeric Value ( HEX )</h1>
+    <p style="color: rgb(78, 231, 23);">Numeric Value (RGB) </p>
+    <span style="color: hsl(104, 82%, 50%);">Numeric Value HSL</span>
+    <p style="color: blue;">Predifined Color Name</p>
+
+    <div id="opacity">
+        Ini menunjukkan opacity 0.5
+    </div>
+
+    <p id="warna">Opacity dengan warna</p>
+    <div id="warna">
+        opacity dengan warna 2
+    </div>
+</body>
+</html>

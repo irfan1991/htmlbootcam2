@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Implementation Selector</title>
+
+    <style>
+        .fancy {
+            font-weight: bold;
+            text-shadow: 4px 4px 3px #777f;
+        }
+        
+        p.fancy {
+            text-shadow: 4px 4px 3px #00c8eb;
+        }
+        
+        #spesial {
+            background-color: chartreuse;
+        }
+        
+        a[href] {
+            color: coral;
+        }
+        
+        a[href*="contoh"] {
+            background-color: silver;
+        }
+        
+        a[href^="#"] {
+            background-color: rgb(21, 211, 211);
+        }
+        
+        a[href*="insentive" i] {
+            background-color: gold;
+        }
+        
+        a[href$=".org"] {
+            background-color: red;
+        }
+    </style>
+</head>
+
+<body>
+
+    <h1 class="fancy">Ini untuk selector class fancy aja</h1>
+    <p class="fancy">Ini untuk selector class fancy + element p </p>
+
+    <div id="spesial">
+        <p>Ini area id spesial</p>
+    </div>
+
+    <ul>
+        <li><a href="#internal">Internal Link</a></li>
+        <li><a href="http://www.contoh.com">contoh</a></li>
+        <li><a href="http://www.Intesive.com">insentive</a></li>
+        <li><a href="http://www.test.org">org link</a></li>
+    </ul>
+
+</body>
+
+</html>

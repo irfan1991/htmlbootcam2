@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Box Sizing</title>
+    <style>
+        div {
+            height: 200px;
+            width: 200px;
+            background-color: lightgreen;
+            border: 10px solid cornflowerblue;
+            padding: 20px;
+        }
+
+        .content {
+            box-sizing: content-box;
+        }
+
+        .box {
+            box-sizing: border-box;
+           
+        }
+
+        div.boxshadow{
+            box-shadow: 6px 6px 5px 10px #d15353;
+        }
+
+        div#rounded {
+            border-radius: 10px 5px 10px 5px solid #d12233;
+        }
+    </style>
+</head>
+<body>
+    <div class="content">
+        <p>Element ini menerapkan box-sizing : content box ( width + padding ) (height + border)</p>
+    </div>
+
+    <div class="box">
+        <p>Element ini menerapkan box-sizing : border box (sama dengan ukuran div )</p>
+    </div>
+
+    <div class="boxshadow">
+        <p>Box shadow</p>
+    </div>
+
+  
+</body>
+</html>

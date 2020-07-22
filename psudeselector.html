@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pseudo Selector </title>
+
+    <style>
+        /* pseudo class selector */
+        
+        a:link {
+            color: red;
+        }
+        
+        a:visited {
+            color: green;
+        }
+        
+        a:hover {
+            color: palevioletred;
+        }
+        
+        a:active {
+            color: orange;
+        }
+        /* pseudo element selector */
+        
+        p::first-letter {
+            font-size: 32px;
+            font-weight: bold;
+            color: orange;
+        }
+        
+        blockquote::before,
+        blockquote::after {
+            content: '"';
+            font-size: 24px;
+            font-style: italic;
+            font-weight: bold;
+        }
+    </style>
+</head>
+
+<body>
+    <a href="https://www.google.com/">Klik Google </a>
+    <br />
+    <p>LOrem ip SUm</p>
+    <blockquote>INi adalah loren ip sum</blockquote>
+</body>
+
+</html>
